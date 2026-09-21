@@ -17,13 +17,23 @@ REQ_W = 1800
 PROBE_W = 160
 
 
+MISSING = set()
+
+
 def page_image(ident, n):
+    """Fetch a page image; returns None for leaves the item does not publish."""
+    if n < 0 or (ident, n) in MISSING:
+        return None
     os.makedirs(f"{IMGD}/{ident}", exist_ok=True)
     p = f"{IMGD}/{ident}/n{n}_w{REQ_W}.jpg"
     if not os.path.exists(p):
         url = f"https://archive.org/download/{ident}/page/n{n}_w{REQ_W}.jpg"
-        r = requests.get(url, timeout=180)
-        r.raise_for_status()
+        try:
+            r = requests.get(url, timeout=180)
+            r.raise_for_status()
+        except Exception:
+            MISSING.add((ident, n))
+            return None
         open(p, "wb").write(r.content)
     return p
 
@@ -58,21 +68,23 @@ def leaf_offset(key, ident, pages, span=8):
         return json.load(open(cachep))["offset"]
     n = len(pages)
     samples = [i for i in (int(n * f) for f in (0.25, 0.45, 0.65, 0.85)) if 0 <= i < n]
+    order = sorted(range(-span, span + 1), key=lambda d: (abs(d), d))
     best, best_hits = 0, -1
-    for d in range(-span, span + 1):
+    for d in order:
+        if min(samples) + d < 0:
+            continue
         hits = 0
         for i in samples:
-            leaf = i + d
-            if leaf < 0:
-                continue
-            a = _probe(ident, leaf)
+            a = _probe(ident, i + d)
             b = pages[i]["bbox"]
             if a is None or not b[2]:
                 continue
             if abs(a - b[3] / b[2]) < 0.004:
                 hits += 1
-        if hits > best_hits:
+        if hits > best_hits:                    # ties keep the smallest shift
             best, best_hits = d, hits
+        if hits == len(samples):
+            break
     os.makedirs(f"{IMGD}/{ident}", exist_ok=True)
     json.dump({"offset": best, "hits": best_hits, "samples": len(samples)},
               open(cachep, "w"))
@@ -103,8 +115,11 @@ def crop(ident, n, box, src_w, slope=0.0):
     if key not in _CACHE:
         if len(_CACHE) > 6:
             _CACHE.clear()
-        _CACHE[key] = Image.open(page_image(ident, n)).convert("L")
+        path = page_image(ident, n)
+        _CACHE[key] = Image.open(path).convert("L") if path else None
     im = _CACHE[key]
+    if im is None:
+        return None
     k = im.width / float(src_w)
     x0, y0, x1, y1 = [v * k for v in box]
     pad = 1
@@ -143,8 +158,9 @@ def render(key, items, pages, out_pdf, limit=None, footer=True):
                 h = it["h"] - S["strip_gap"]
                 y -= h
                 img = crop(ident, it["page"] + off, it["src"], it["pw"], it.get("slope", 0.0))
-                c.drawImage(ImageReader(img), S["margin"] + it.get("indent", 0.0), y,
-                            width=it["w"], height=h, mask=None)
+                if img is not None:
+                    c.drawImage(ImageReader(img), S["margin"] + it.get("indent", 0.0), y,
+                                width=it["w"], height=h, mask=None)
                 y -= S["strip_gap"]
             elif it["t"] == "fig":
                 h = it["h"] - S["fig_gap"]

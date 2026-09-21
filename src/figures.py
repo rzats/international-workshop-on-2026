@@ -33,7 +33,7 @@ plt.rcParams.update({
     "figure.dpi": 300, "savefig.dpi": 300, "savefig.bbox": "tight",
     "savefig.pad_inches": 0.02,
 })
-W1 = 4.6      # one-column width in inches
+W1 = 5.2      # one-column text width in inches
 
 
 def style_ax(ax):
@@ -56,8 +56,9 @@ def fig_tradeoff(o):
         ax.errorbar(x, y, yerr=[lo, hi], color=C[sel], linestyle=ls, marker=mk,
                     markersize=4.2, linewidth=1.6, capsize=2, elinewidth=0.8,
                     markeredgecolor="white", markeredgewidth=0.5, label=LABEL[sel])
+        dy = {"random": 6, "conf": 8, "model": -12, "oracle": 6}[sel]
         ax.annotate(LABEL[sel], (x[-1], y[-1]), textcoords="offset points",
-                    xytext=(7, 5), fontsize=7.2, color=INK2, ha="left")
+                    xytext=(7, dy), fontsize=7.2, color=INK2, ha="left")
     ax.set_xlabel("reflowable coverage (% of running words kept as text)")
     ax.set_ylabel("residual error density\n(exposed OCR errors per 1000 words)")
     ax.set_xlim(56, 104)
@@ -92,7 +93,7 @@ def fig_auc(o):
     ax.set_xlabel("AUC for predicting that an OCR token is wrong")
     ax.set_xlim(0.45, 1.02)
     ax.set_ylim(-0.8, len(rows) - 0.2)
-    leg = ax.legend(frameon=False, loc="lower left", scatterpoints=1,
+    leg = ax.legend(frameon=False, loc="upper left", scatterpoints=1,
                     borderaxespad=0.3, labelspacing=0.35)
     for t in leg.get_texts():
         t.set_fontsize(7.4)

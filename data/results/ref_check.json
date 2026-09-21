@@ -1,0 +1,186 @@
+{
+ "knuth1981": {
+  "doi": "10.1002/spe.4380111102",
+  "status": "ok",
+  "title": "Breaking paragraphs into lines",
+  "year": 1981
+ },
+ "plass1983": {
+  "doi": "10.1007/3-540-36477-3_5",
+  "status": "ok",
+  "title": "On the Pagination of Complex Documents",
+  "year": 2003
+ },
+ "breuel2007": {
+  "doi": "10.1109/ICDAR.2007.4377078",
+  "status": "ok",
+  "title": "The hOCR Microformat for OCR Workflow and Results",
+  "year": 2007
+ },
+ "breuel2002": {
+  "doi": "10.1109/ICPR.2002.1044766",
+  "status": "ok",
+  "title": "Paper to PDA",
+  "year": null
+ },
+ "traub2015": {
+  "doi": "10.1007/978-3-319-24592-8_19",
+  "status": "ok",
+  "title": "Impact Analysis of OCR Quality on Research Tasks in Digital Archives",
+  "year": 2015
+ },
+ "hill2019": {
+  "doi": "10.1093/llc/fqz024",
+  "status": "ok",
+  "title": "Quantifying the impact of dirty OCR on historical text analysis: Eighteenth Century Collections Online as a case study",
+  "year": 2019
+ },
+ "cordell2017": {
+  "doi": "10.1353/bh.2017.0006",
+  "status": "ok",
+  "title": "\"Q i-jtb the Raven\": Taking Dirty OCR Seriously",
+  "year": 2017
+ },
+ "nguyen2021": {
+  "doi": "10.1145/3453476",
+  "status": "ok",
+  "title": "Survey of Post-OCR Processing Approaches",
+  "year": 2021
+ },
+ "chiron2017": {
+  "doi": "10.1109/ICDAR.2017.232",
+  "status": "ok",
+  "title": "ICDAR2017 Competition on Post-OCR Text Correction",
+  "year": 2017
+ },
+ "vanstrien2020": {
+  "doi": "10.5220/0009169004840496",
+  "status": "ok",
+  "title": "Assessing the Impact of OCR Quality on Downstream NLP Tasks",
+  "year": 2020
+ },
+ "binmakhashen2019": {
+  "doi": "10.1145/3355610",
+  "status": "ok",
+  "title": "Document Layout Analysis",
+  "year": 2019
+ },
+ "shen2021": {
+  "doi": "10.1007/978-3-030-86549-8_9",
+  "status": "ok",
+  "title": "LayoutParser: A Unified Toolkit for Deep Learning Based Document Image Analysis",
+  "year": 2021
+ },
+ "pletschacher2010": {
+  "doi": "10.1109/ICPR.2010.72",
+  "status": "ok",
+  "title": "The PAGE (Page Analysis and Ground-Truth Elements) Format Framework",
+  "year": 2010
+ },
+ "yalniz2011": {
+  "doi": "10.1109/ICDAR.2011.157",
+  "status": "ok",
+  "title": "A Fast Alignment Scheme for Automatic OCR Evaluation of Books",
+  "year": 2011
+ },
+ "feng2006": {
+  "doi": "10.1145/1141753.1141776",
+  "status": "ok",
+  "title": "A hierarchical, HMM-based automatic evaluation of OCR accuracy for a digital library of books",
+  "year": 2006
+ },
+ "legge2011": {
+  "doi": "10.1167/11.5.8",
+  "status": "ok",
+  "title": "Does print size matter for reading? A review of findings from vision science and typography",
+  "year": 2011
+ },
+ "arditi2005": {
+  "doi": "10.1016/j.visres.2005.06.013",
+  "status": "ok",
+  "title": "Serifs and font legibility",
+  "year": 2005
+ },
+ "russellminda2007": {
+  "doi": "10.1177/0145482X0710100703",
+  "status": "ok",
+  "title": "The Legibility of Typefaces for Readers with Low Vision: A Research Review",
+  "year": 2007
+ },
+ "bernard2001": {
+  "doi": "10.1145/634067.634173",
+  "status": "ok",
+  "title": "The effects of font type and size on the legibility and reading time of online text by older adults",
+  "year": 2001
+ },
+ "chung2002": {
+  "doi": null,
+  "status": "no-doi"
+ },
+ "zatserkovna2019": {
+  "doi": "10.32403/0554-4866-2019-2-78-36-44",
+  "status": "ok",
+  "title": "Analysis of Braille translation software",
+  "year": 2019
+ },
+ "wilson1927": {
+  "doi": "10.1080/01621459.1927.10502953",
+  "status": "ok",
+  "title": "Probable Inference, the Law of Succession, and Statistical Inference",
+  "year": 1927
+ },
+ "brown2001": {
+  "doi": "10.1214/ss/1009213286",
+  "status": "ok",
+  "title": "Interval Estimation for a Binomial Proportion",
+  "year": 2001
+ },
+ "niculescu2005": {
+  "doi": "10.1145/1102351.1102430",
+  "status": "ok",
+  "title": "Predicting good probabilities with supervised learning",
+  "year": 2005
+ },
+ "guo2017": {
+  "doi": null,
+  "status": "no-doi"
+ },
+ "kissos2016": {
+  "doi": "10.1109/DAS.2016.44",
+  "status": "ok",
+  "title": "OCR Error Correction Using Character Correction and Feature-Based Word Classification",
+  "year": 2016
+ },
+ "smith2018": {
+  "doi": null,
+  "status": "no-doi"
+ },
+ "wcag22": {
+  "doi": null,
+  "status": "no-doi"
+ },
+ "epuba11": {
+  "doi": null,
+  "status": "no-doi"
+ },
+ "eaa2019": {
+  "doi": null,
+  "status": "no-doi"
+ },
+ "marrakesh2013": {
+  "doi": null,
+  "status": "no-doi"
+ },
+ "antonacopoulos2009": {
+  "doi": "10.1109/ICDAR.2009.271",
+  "status": "ok",
+  "title": "A Realistic Dataset for Performance Evaluation of Document Layout Analysis",
+  "year": 2009
+ },
+ "lin2005": {
+  "doi": "10.1007/s10032-005-0149-4",
+  "status": "ok",
+  "title": "Detection and analysis of table of contents based on content association",
+  "year": 2005
+ }
+}

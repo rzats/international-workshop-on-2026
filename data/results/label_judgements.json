@@ -1,0 +1,10 @@
+{
+ "_note": "Manual adjudication of the stratified sample in label_sample.json. 1 = the predicted role is correct, 0 = it is not. Sampling is stratified by predicted class, so these give per-class precision, not overall accuracy.",
+ "_adjudicated_by": "authors",
+ "heading":  {"pride:27:4":0,"leaves:151:0":0,"moby:152:4":1,"tomsawyer:37:1":0,"timemachine:234:1":0,"moby:146:6":1,"leaves:182:2":1,"moby:339:2":1,"frankenstein:265:1":0,"moby:511:2":1,"baskerville:13:0":1,"pride:29:1":1},
+ "verse":    {"alice:397:3":1,"leaves:194:13":1,"holmes:250:6":0,"leaves:272:4":1,"alice:399:5":1,"treasure:312:5":0,"leaves:143:3":1,"alice:214:3":1,"leaves:141:6":1,"leaves:300:12":1,"leaves:272:13":1,"leaves:186:5":1},
+ "caption":  {"tomsawyer:187:14":0,"holmes:228:1":0,"tomsawyer:266:1":0,"tomsawyer:236:4":0,"tomsawyer:282:8":0,"tomsawyer:208:5":0,"alice:409:3":0,"holmes:79:5":0,"holmes:156:5":0,"pride:180:4":1,"holmes:84:6":1,"tomsawyer:204:13":0},
+ "footnote": {"moby:408:5":0,"jungle:15:15":0,"baskerville:226:9":0,"timemachine:234:14":0,"jungle:331:0":0,"moby:623:6":0,"pride:247:4":0,"pride:516:16":0,"alice:210:25":0,"tomsawyer:28:5":1,"leaves:92:15":0,"pride:8:2":0},
+ "body":     {"frankenstein:82:3":1,"alice:413:5":1,"tomsawyer:243:1":0,"tomsawyer:208:3":1,"jungle:45:9":0,"frankenstein:48:1":0,"baskerville:131:2":1,"leaves:76:2":0,"dracula:14:2":1,"jungle:180:7":1,"baskerville:248:9":1,"treasure:187:8":1},
+ "furniture":{"dracula:182:0":1,"alice:431:0":1,"moby:375:0":1,"alice:115:0":1,"moby:377:0":1,"holmes:126:0":1,"treasure:120:0":1,"holmes:231:0":1,"dracula:234:0":1,"moby:137:0":1,"alice:392:0":1,"jungle:84:0":1}
+}

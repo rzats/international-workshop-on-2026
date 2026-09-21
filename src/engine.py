@@ -23,10 +23,12 @@ for name, fn in (("AH", "AtkinsonHyperlegible-Regular.ttf"),
         pdfmetrics.registerFont(TTFont(name, os.path.join(FONT_DIR, fn)))
 
 # A4 page, 20 mm margins; 18 pt body is the lower bound of the large-print range
-# recommended by sight-loss organisations, and no element is set below 16 pt.
+# recommended by sight-loss organisations. Captions and notes are set at the same
+# size as the body rather than smaller: the measured precision of caption and
+# footnote detection is too low to risk setting misclassified body text small.
 SPEC = {
     "pw": 595.276, "ph": 841.89, "margin": 56.693,
-    "body": 18.0, "lead": 1.40, "head": 22.0, "small": 16.0,
+    "body": 18.0, "lead": 1.40, "head": 22.0, "small": 18.0,
     "head_before": 16.0, "head_after": 8.0, "para_gap": 6.0,
     "strip_gap": 7.2, "runover": 27.0, "fig_gap": 12.0,
 }
