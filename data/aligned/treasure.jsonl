@@ -49,12 +49,10 @@
 {"raw": "New", "refs": [[6, 6, 0, 0]], "conf": [5], "geo": [[535, 1816, 676, 1856, 50.0, 1816, 535, 1100]], "role": "body", "page": 6, "PW": 1987, "PH": 3164, "res": 300, "label": "unk", "ref": null}
 {"raw": "Arabian", "refs": [[6, 6, 0, 1]], "conf": [29], "geo": [[676, 1816, 912, 1855, 50.0, 1816, 535, 1100]], "role": "body", "page": 6, "PW": 1987, "PH": 3164, "res": 300, "label": "unk", "ref": null}
 {"raw": "Nights.", "refs": [[6, 6, 0, 2]], "conf": [53], "geo": [[912, 1816, 1100, 1856, 50.0, 1816, 535, 1100]], "role": "body", "page": 6, "PW": 1987, "PH": 3164, "res": 300, "label": "unk", "ref": null}
-{"raw": "Treasure", "refs": [[9, 0, 0, 0]], "conf": [13], "geo": [[170, 318, 1184, 450, 183.0, 318, 170, 1828]], "role": "heading", "page": 9, "PW": 1987, "PH": 3164, "res": 300, "label": "ok", "ref": "treasure"}
-{"raw": "Island.", "refs": [[9, 0, 0, 1]], "conf": [21], "geo": [[1184, 318, 1828, 454, 183.0, 318, 170, 1828]], "role": "heading", "page": 9, "PW": 1987, "PH": 3164, "res": 300, "label": "ok", "ref": "island"}
-{"raw": "BY", "refs": [[9, 1, 0, 0]], "conf": [17], "geo": [[958, 1071, 1015, 1099, 41.0, 1071, 958, 1015]], "role": "heading", "page": 9, "PW": 1987, "PH": 3164, "res": 300, "label": "ok", "ref": "by"}
-{"raw": "ROBERT", "refs": [[9, 2, 0, 0]], "conf": [15], "geo": [[324, 1170, 762, 1234, 87.0, 1170, 324, 1636]], "role": "heading", "page": 9, "PW": 1987, "PH": 3164, "res": 300, "label": "ok", "ref": "robert"}
-{"raw": "LOUIS", "refs": [[9, 2, 0, 1]], "conf": [21], "geo": [[762, 1172, 1108, 1234, 87.0, 1170, 324, 1636]], "role": "heading", "page": 9, "PW": 1987, "PH": 3164, "res": 300, "label": "ok", "ref": "louis"}
-{"raw": "STEVENSON.", "refs": [[9, 2, 0, 2]], "conf": [40], "geo": [[1108, 1172, 1636, 1236, 87.0, 1170, 324, 1636]], "role": "heading", "page": 9, "PW": 1987, "PH": 3164, "res": 300, "label": "ok", "ref": "stevenson"}
+{"raw": "BY", "refs": [[9, 1, 0, 0]], "conf": [17], "geo": [[958, 1071, 1015, 1099, 41.0, 1071, 958, 1015]], "role": "heading", "page": 9, "PW": 1987, "PH": 3164, "res": 300, "label": "unk", "ref": null}
+{"raw": "ROBERT", "refs": [[9, 2, 0, 0]], "conf": [15], "geo": [[324, 1170, 762, 1234, 87.0, 1170, 324, 1636]], "role": "heading", "page": 9, "PW": 1987, "PH": 3164, "res": 300, "label": "unk", "ref": null}
+{"raw": "LOUIS", "refs": [[9, 2, 0, 1]], "conf": [21], "geo": [[762, 1172, 1108, 1234, 87.0, 1170, 324, 1636]], "role": "heading", "page": 9, "PW": 1987, "PH": 3164, "res": 300, "label": "unk", "ref": null}
+{"raw": "STEVENSON.", "refs": [[9, 2, 0, 2]], "conf": [40], "geo": [[1108, 1172, 1636, 1236, 87.0, 1170, 324, 1636]], "role": "heading", "page": 9, "PW": 1987, "PH": 3164, "res": 300, "label": "unk", "ref": null}
 {"raw": "CASSELL", "refs": [[9, 4, 0, 0]], "conf": [15], "geo": [[189, 2589, 685, 2654, 87.0, 2589, 189, 1706]], "role": "heading", "page": 9, "PW": 1987, "PH": 3164, "res": 300, "label": "unk", "ref": null}
 {"raw": "COMPANY,", "refs": [[9, 4, 0, 2]], "conf": [16], "geo": [[816, 2594, 1379, 2672, 87.0, 2589, 189, 1706]], "role": "heading", "page": 9, "PW": 1987, "PH": 3164, "res": 300, "label": "unk", "ref": null}
 {"raw": "Limited", "refs": [[9, 4, 0, 3]], "conf": [52], "geo": [[1379, 2595, 1706, 2655, 87.0, 2589, 189, 1706]], "role": "heading", "page": 9, "PW": 1987, "PH": 3164, "res": 300, "label": "unk", "ref": null}
@@ -313,6 +311,7 @@
 {"raw": "the", "refs": [[13, 22, 0, 4]], "conf": [56], "geo": [[695, 2769, 810, 2808, 50.0, 2767, 201, 1405]], "role": "footnote", "page": 13, "PW": 1987, "PH": 3164, "res": 300, "label": "ok", "ref": "the"}
 {"raw": "Islaxd", "refs": [[13, 22, 0, 5]], "conf": [25], "geo": [[810, 2769, 1018, 2808, 50.0, 2767, 201, 1405]], "role": "footnote", "page": 13, "PW": 1987, "PH": 3164, "res": 300, "label": "sub", "ref": "island"}
 {"raw": "CONTENTS.", "refs": [[14, 0, 0, 0]], "conf": [44], "geo": [[819, 156, 1094, 192, 50.0, 156, 819, 1094]], "role": "heading", "page": 14, "PW": 1987, "PH": 3164, "res": 300, "label": "sub", "ref": "93"}
+{"raw": "Vlll", "refs": [[14, 1, 0, 0]], "conf": [0], "geo": [[144, 163, 233, 195, 45.0, 163, 144, 233]], "role": "body", "page": 14, "PW": 1987, "PH": 3164, "res": 300, "label": "sub", "ref": null}
 {"raw": "^part", "refs": [[14, 2, 0, 0]], "conf": [0], "geo": [[569, 336, 721, 391, 50.0, 336, 569, 1339]], "role": "heading", "page": 14, "PW": 1987, "PH": 3164, "res": 300, "label": "ok", "ref": "part"}
 {"raw": "IV.—", "refs": [[14, 2, 0, 1]], "conf": [40], "geo": [[721, 336, 857, 376, 50.0, 336, 569, 1339]], "role": "heading", "page": 14, "PW": 1987, "PH": 3164, "res": 300, "label": "sub", "ref": "four"}
 {"raw": "THE", "refs": [[14, 2, 0, 2]], "conf": [16], "geo": [[859, 336, 1021, 376, 50.0, 336, 569, 1339]], "role": "heading", "page": 14, "PW": 1987, "PH": 3164, "res": 300, "label": "ok", "ref": "the"}
@@ -453,9 +452,7 @@
 {"raw": "a", "refs": [[14, 33, 0, 4]], "conf": [25], "geo": [[762, 2795, 817, 2836, 50.0, 2795, 138, 1781]], "role": "footnote", "page": 14, "PW": 1987, "PH": 3164, "res": 300, "label": "ok", "ref": "a"}
 {"raw": "Chieftain", "refs": [[14, 33, 0, 5]], "conf": [62], "geo": [[817, 2795, 1060, 2836, 50.0, 2795, 138, 1781]], "role": "footnote", "page": 14, "PW": 1987, "PH": 3164, "res": 300, "label": "ok", "ref": "chieftain"}
 {"raw": "276", "refs": [[14, 33, 0, 6]], "conf": [100], "geo": [[1705, 2795, 1781, 2836, 50.0, 2795, 138, 1781]], "role": "footnote", "page": 14, "PW": 1987, "PH": 3164, "res": 300, "label": "sub", "ref": "201"}
-{"raw": "TREASURE", "refs": [[15, 0, 0, 0]], "conf": [7], "geo": [[248, 546, 1112, 658, 137.0, 546, 248, 1662]], "role": "heading", "page": 15, "PW": 1987, "PH": 3164, "res": 300, "label": "ok", "ref": "treasure"}
-{"raw": "ISLAND.", "refs": [[15, 0, 0, 1]], "conf": [22], "geo": [[1112, 546, 1662, 654, 137.0, 546, 248, 1662]], "role": "heading", "page": 15, "PW": 1987, "PH": 3164, "res": 300, "label": "ok", "ref": "island"}
-{"raw": "-*o*-", "refs": [[15, 1, 0, 0]], "conf": [0], "geo": [[919, 761, 1009, 781, 41.0, 761, 919, 1009]], "role": "body", "page": 15, "PW": 1987, "PH": 3164, "res": 300, "label": "ins", "ref": null}
+{"raw": "-*o*-", "refs": [[15, 1, 0, 0]], "conf": [0], "geo": [[919, 761, 1009, 781, 41.0, 761, 919, 1009]], "role": "body", "page": 15, "PW": 1987, "PH": 3164, "res": 300, "label": "sub", "ref": "xxxiv"}
 {"raw": "Part", "refs": [[15, 2, 0, 0]], "conf": [0], "geo": [[832, 874, 1049, 938, 83.0, 874, 832, 1089]], "role": "heading", "page": 15, "PW": 1987, "PH": 3164, "res": 300, "label": "ok", "ref": "part"}
 {"raw": "I.", "refs": [[15, 2, 0, 1]], "conf": [87], "geo": [[1049, 874, 1089, 920, 83.0, 874, 832, 1089]], "role": "heading", "page": 15, "PW": 1987, "PH": 3164, "res": 300, "label": "ok", "ref": "i"}
 {"raw": "THE", "refs": [[15, 3, 0, 0]], "conf": [5], "geo": [[572, 993, 757, 1035, 58.0, 988, 572, 1349]], "role": "heading", "page": 15, "PW": 1987, "PH": 3164, "res": 300, "label": "ok", "ref": "the"}
@@ -70914,6 +70911,8 @@
 {"raw": "R.", "refs": [[312, 19, 1, 9]], "conf": [4], "geo": [[1459, 2796, 1551, 2834, 50.0, 2794, 250, 1816]], "role": "footnote", "page": 312, "PW": 1961, "PH": 3174, "res": 300, "label": "unk", "ref": null}
 {"raw": "P.", "refs": [[312, 19, 1, 10]], "conf": [10], "geo": [[1551, 2795, 1631, 2833, 50.0, 2794, 250, 1816]], "role": "footnote", "page": 312, "PW": 1961, "PH": 3174, "res": 300, "label": "unk", "ref": null}
 {"raw": "Leitch.", "refs": [[312, 19, 1, 11]], "conf": [59], "geo": [[1631, 2795, 1816, 2830, 50.0, 2794, 250, 1816]], "role": "footnote", "page": 312, "PW": 1961, "PH": 3174, "res": 300, "label": "unk", "ref": null}
+{"raw": "Cloth,", "refs": [[312, 20, 0, 0]], "conf": [36], "geo": [[1124, 2846, 1282, 2890, 50.0, 2846, 1124, 1335]], "role": "footnote", "page": 312, "PW": 1961, "PH": 3174, "res": 300, "label": "unk", "ref": null}
+{"raw": "5s.", "refs": [[312, 20, 0, 1]], "conf": [41], "geo": [[1282, 2855, 1335, 2891, 50.0, 2846, 1124, 1335]], "role": "footnote", "page": 312, "PW": 1961, "PH": 3174, "res": 300, "label": "unk", "ref": null}
 {"raw": "China", "refs": [[312, 21, 0, 0]], "conf": [23], "geo": [[150, 2901, 325, 2941, 50.0, 2893, 150, 1816]], "role": "footnote", "page": 312, "PW": 1961, "PH": 3174, "res": 300, "label": "unk", "ref": null}
 {"raw": "Painting.", "refs": [[312, 21, 0, 1]], "conf": [14], "geo": [[325, 2899, 594, 2949, 50.0, 2893, 150, 1816]], "role": "footnote", "page": 312, "PW": 1961, "PH": 3174, "res": 300, "label": "unk", "ref": null}
 {"raw": "By", "refs": [[312, 21, 0, 2]], "conf": [18], "geo": [[594, 2899, 684, 2950, 50.0, 2893, 150, 1816]], "role": "footnote", "page": 312, "PW": 1961, "PH": 3174, "res": 300, "label": "unk", "ref": null}

@@ -1,112 +1,26 @@
 {
- "alice": {
-  "heading": 158,
-  "furniture": 335,
-  "body": 2357,
-  "verse": 151,
-  "caption": 106,
-  "footnote": 35
- },
- "pride": {
-  "footnote": 48,
-  "body": 2795,
-  "furniture": 452,
-  "caption": 198,
-  "heading": 91,
-  "verse": 2
- },
- "frankenstein": {
-  "body": 1134,
-  "furniture": 475,
-  "heading": 50,
-  "footnote": 13,
-  "caption": 1
- },
- "holmes": {
-  "body": 2651,
-  "heading": 120,
-  "furniture": 375,
-  "footnote": 12,
-  "caption": 218,
-  "verse": 55
- },
  "carol": {
   "heading": 31,
-  "body": 503,
-  "furniture": 14,
+  "body": 461,
+  "furniture": 57,
   "verse": 21,
-  "footnote": 9,
+  "footnote": 8,
   "caption": 2
  },
- "leaves": {
-  "heading": 424,
-  "body": 5525,
-  "furniture": 134,
-  "verse": 425,
-  "caption": 3,
-  "footnote": 2
- },
- "timemachine": {
-  "body": 733,
-  "heading": 75,
-  "footnote": 18,
-  "furniture": 190,
-  "caption": 5
- },
- "treasure": {
-  "heading": 126,
-  "body": 1891,
-  "caption": 2,
-  "footnote": 62,
-  "furniture": 267,
-  "verse": 26
- },
- "jungle": {
-  "heading": 113,
-  "body": 1586,
-  "furniture": 256,
-  "caption": 44,
-  "verse": 136,
-  "footnote": 23
- },
- "dracula": {
-  "heading": 112,
-  "furniture": 340,
-  "footnote": 5,
-  "body": 2237,
-  "caption": 2,
-  "verse": 3
- },
- "walden": {
-  "heading": 36,
-  "furniture": 356,
-  "caption": 2,
-  "footnote": 12,
-  "body": 900,
-  "verse": 13
- },
- "tomsawyer": {
-  "heading": 203,
-  "caption": 231,
-  "footnote": 50,
-  "body": 2066,
-  "verse": 55,
-  "furniture": 35
+ "alice": {
+  "heading": 146,
+  "furniture": 338,
+  "body": 2363,
+  "verse": 152,
+  "caption": 106,
+  "footnote": 37
  },
  "moby": {
-  "body": 3205,
-  "heading": 328,
+  "body": 3203,
+  "heading": 327,
+  "furniture": 670,
   "footnote": 53,
   "verse": 18,
-  "furniture": 667,
   "caption": 1
- },
- "baskerville": {
-  "heading": 246,
-  "caption": 246,
-  "body": 1834,
-  "verse": 35,
-  "footnote": 33,
-  "furniture": 3
  }
 }

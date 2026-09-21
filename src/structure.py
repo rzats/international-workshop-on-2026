@@ -59,11 +59,21 @@ def running_head_index(pages):
                 l = p["lines"][0]
                 rel = l["bbox"][1] / H
                 if rel < 0.10 or rel > 0.90:
-                    t = " ".join(norm_word(w[5]) for w in l["w"]).strip()
-                    t = re.sub(r"\d+", "#", t)
+                    t = head_key(l)
                     if t:
                         cnt[t] += 1
     return cnt
+
+
+def head_key(line):
+    """Normalised running-head text with the folio stripped from either end."""
+    ws = [re.sub(r"\d+", "#", norm_word(w[5])) for w in line["w"]]
+    ws = [w for w in ws if w]
+    while ws and set(ws[0]) <= {"#", ".", "-", "'"}:
+        ws.pop(0)
+    while ws and set(ws[-1]) <= {"#", ".", "-", "'"}:
+        ws.pop()
+    return " ".join(ws)
 
 
 def classify_par(par, pg, st, heads, n_pages, photos):
@@ -76,15 +86,6 @@ def classify_par(par, pg, st, heads, n_pages, photos):
     text = " ".join(w[5] for w in words)
     ntext = re.sub(r"\d+", "#", " ".join(norm_word(w[5]) for w in words).strip())
 
-    # page furniture: short repeated line, bare folio, or a running head carrying
-    # a page number, near the head or foot of the page
-    if len(lines) == 1 and (y0 < 0.09 or y1 > 0.91):
-        if heads.get(ntext, 0) >= max(3, 0.02 * n_pages):
-            return "furniture"
-        if len(words) <= 3 and re.fullmatch(r"[#\s\-.ivxlc]*", ntext or ""):
-            return "furniture"
-        if "#" in (ntext or "") and len(words) <= 9:
-            return "furniture"
 
     # caption: small type adjacent to an illustration region
     for ph in photos:
@@ -142,6 +143,40 @@ def reading_order(pg, st):
                                         p["bbox"][1], p["bbox"][0]))
 
 
+def apply_page_furniture(recs, pg, st, heads, n_pages):
+    """Strip running heads, folios and catchwords.
+
+    These repeat on every page of the original and would otherwise be scattered
+    through the reflowed text, so they are identified as the single-line
+    paragraph at the very top or very bottom of a page whose wording recurs
+    across the volume or which is nothing but a page number.
+    """
+    if not recs:
+        return
+    H = pg["bbox"][3] or 1
+    thresh = max(3, 0.02 * n_pages)
+    order = sorted(range(len(recs)), key=lambda i: recs[i]["par"]["bbox"][1])
+    for pos, band in ((order[0], "top"), (order[-1], "bot")):
+        r = recs[pos]
+        lines = r["par"]["lines"]
+        if len(lines) != 1:
+            continue
+        y0, y1 = r["par"]["bbox"][1] / H, r["par"]["bbox"][3] / H
+        if band == "top" and y0 > 0.20:
+            continue
+        if band == "bot" and y1 < 0.85:
+            continue
+        ws = [w[5] for w in lines[0]["w"]]
+        key = head_key(lines[0])
+        digits = re.sub(r"\d+", "#", " ".join(norm_word(w) for w in ws)).strip()
+        if key and heads.get(key, 0) >= thresh:
+            r["role"] = "furniture"
+        elif len(ws) <= 3 and re.fullmatch(r"[#\s\-.ivxlc]*", digits or ""):
+            r["role"] = "furniture"
+        elif "#" in digits and len(ws) <= 9:
+            r["role"] = "furniture"
+
+
 def apply_page_verse(recs, pg, st):
     """Whole-page verse pass.
 
@@ -191,6 +226,7 @@ def analyse(key):
         for p in pars:
             role = classify_par(p, pg, st, heads, len(pages), photos)
             recs.append({"role": role, "par": p})
+        apply_page_furniture(recs, pg, st, heads, len(pages))
         apply_page_verse(recs, pg, st)
         out.append({"page": pg, "pars": recs, "photos": photos})
     return out, st
