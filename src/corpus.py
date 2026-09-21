@@ -19,3 +19,13 @@ CORPUS = {
     # microform-derived scan: deliberately included as a worst-case source
     "baskerville": ("cihm_79798",                  1902, 2852, "microform",   "Doyle, The Hound of the Baskervilles (microform)"),
 }
+
+SHORT = {
+    "alice": "Alice in Wonderland", "pride": "Pride and Prejudice",
+    "frankenstein": "Frankenstein", "holmes": "Sherlock Holmes",
+    "carol": "A Christmas Carol", "leaves": "Leaves of Grass",
+    "timemachine": "The Time Machine", "treasure": "Treasure Island",
+    "jungle": "The Jungle Book", "dracula": "Dracula", "walden": "Walden",
+    "tomsawyer": "Tom Sawyer", "moby": "Moby-Dick",
+    "baskerville": "The Hound of the Baskervilles*",
+}

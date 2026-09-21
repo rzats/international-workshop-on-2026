@@ -1,0 +1,31 @@
+alice {'auc': np.float64(0.8172), 'ece': np.float64(0.0248), 'base': 0.0653, 'n': 56926}
+pride {'auc': np.float64(0.9692), 'ece': np.float64(0.0195), 'base': 0.0217, 'n': 125905}
+frankenstein {'auc': np.float64(0.8123), 'ece': np.float64(0.0173), 'base': 0.014, 'n': 74251}
+holmes {'auc': np.float64(0.8361), 'ece': np.float64(0.0025), 'base': 0.0362, 'n': 105020}
+carol {'auc': np.float64(0.7916), 'ece': np.float64(0.0191), 'base': 0.052, 'n': 10891}
+leaves {'auc': np.float64(0.8717), 'ece': np.float64(0.014), 'base': 0.0378, 'n': 62819}
+timemachine {'auc': np.float64(0.6607), 'ece': np.float64(0.0642), 'base': 0.0976, 'n': 31501}
+treasure {'auc': np.float64(0.8243), 'ece': np.float64(0.0037), 'base': 0.0331, 'n': 68800}
+jungle {'auc': np.float64(0.8418), 'ece': np.float64(0.0067), 'base': 0.051, 'n': 51137}
+dracula {'auc': np.float64(0.9612), 'ece': np.float64(0.0207), 'base': 0.0236, 'n': 159694}
+walden {'auc': np.float64(0.8567), 'ece': np.float64(0.0154), 'base': 0.0266, 'n': 105626}
+tomsawyer {'auc': np.float64(0.8845), 'ece': np.float64(0.0072), 'base': 0.04, 'n': 70452}
+moby {'auc': np.float64(0.7979), 'ece': np.float64(0.0117), 'base': 0.0301, 'n': 211466}
+baskerville {'auc': np.float64(0.9115), 'ece': np.float64(0.0295), 'base': 0.024, 'n': 55329}
+
+ranking AUC (raw conf / within-item percentile):
+  alice          0.729 0.720
+  pride          0.875 0.880
+  frankenstein   0.658 0.659
+  holmes         0.713 0.712
+  carol          0.635 0.635
+  leaves         0.691 0.683
+  timemachine    0.538 0.536
+  treasure       0.674 0.674
+  jungle         0.753 0.745
+  dracula        0.918 0.922
+  walden         0.598 0.599
+  tomsawyer      0.823 0.817
+  moby           0.618 0.618
+  baskerville    0.840 0.851
+pooled raw-conf AUC 0.6829 pooled pct AUC 0.7147

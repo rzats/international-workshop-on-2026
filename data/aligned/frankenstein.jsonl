@@ -24137,10 +24137,6 @@
 {"raw": "again", "refs": [[104, 5, 5, 7]], "conf": [63], "geo": [[932, 2220, 1092, 2278, 50.0, 2214, 177, 1441]], "role": "body", "page": 104, "PW": 1470, "PH": 2420, "res": 300, "label": "ok", "ref": "again"}
 {"raw": "beholding", "refs": [[104, 5, 5, 8]], "conf": [73], "geo": [[1093, 2220, 1360, 2281, 50.0, 2214, 177, 1441]], "role": "body", "page": 104, "PW": 1470, "PH": 2420, "res": 300, "label": "ok", "ref": "beholding"}
 {"raw": "thy", "refs": [[104, 5, 5, 9]], "conf": [76], "geo": [[1361, 2223, 1441, 2283, 50.0, 2214, 177, 1441]], "role": "body", "page": 104, "PW": 1470, "PH": 2420, "res": 300, "label": "ok", "ref": "thy"}
-{"raw": "THE", "refs": [[105, 0, 0, 0]], "conf": [83], "geo": [[375, 139, 501, 170, 39.0, 139, 375, 1334]], "role": "heading", "page": 105, "PW": 1470, "PH": 2420, "res": 300, "label": "unk", "ref": null}
-{"raw": "MODERN", "refs": [[105, 0, 0, 1]], "conf": [69], "geo": [[502, 140, 734, 171, 39.0, 139, 375, 1334]], "role": "heading", "page": 105, "PW": 1470, "PH": 2420, "res": 300, "label": "unk", "ref": null}
-{"raw": "PROMETHEUS.", "refs": [[105, 0, 0, 2]], "conf": [29], "geo": [[735, 141, 1258, 175, 39.0, 139, 375, 1334]], "role": "heading", "page": 105, "PW": 1470, "PH": 2420, "res": 300, "label": "unk", "ref": null}
-{"raw": "IOl", "refs": [[105, 0, 0, 3]], "conf": [40], "geo": [[1259, 146, 1334, 177, 39.0, 139, 375, 1334]], "role": "heading", "page": 105, "PW": 1470, "PH": 2420, "res": 300, "label": "unk", "ref": null}
 {"raw": "streams,", "refs": [[105, 1, 0, 0]], "conf": [67], "geo": [[78, 247, 315, 288, 50.0, 237, 78, 1338]], "role": "body", "page": 105, "PW": 1470, "PH": 2420, "res": 300, "label": "ok", "ref": "streams"}
 {"raw": "thy", "refs": [[105, 1, 0, 1]], "conf": [37], "geo": [[316, 237, 428, 295, 50.0, 237, 78, 1338]], "role": "body", "page": 105, "PW": 1470, "PH": 2420, "res": 300, "label": "ok", "ref": "thy"}
 {"raw": "mountains,", "refs": [[105, 1, 0, 2]], "conf": [54], "geo": [[429, 238, 726, 293, 50.0, 237, 78, 1338]], "role": "body", "page": 105, "PW": 1470, "PH": 2420, "res": 300, "label": "ok", "ref": "mountains"}
@@ -26630,10 +26626,6 @@
 {"raw": "might", "refs": [[114, 4, 6, 4]], "conf": [78], "geo": [[818, 2227, 996, 2285, 50.0, 2224, 124, 1384]], "role": "body", "page": 114, "PW": 1470, "PH": 2420, "res": 300, "label": "ok", "ref": "might"}
 {"raw": "otherwise", "refs": [[114, 4, 6, 5]], "conf": [79], "geo": [[997, 2227, 1270, 2271, 50.0, 2224, 124, 1384]], "role": "body", "page": 114, "PW": 1470, "PH": 2420, "res": 300, "label": "ok", "ref": "otherwise"}
 {"raw": "have", "refs": [[114, 4, 6, 6]], "conf": [81], "geo": [[1271, 2228, 1384, 2272, 50.0, 2224, 124, 1384]], "role": "body", "page": 114, "PW": 1470, "PH": 2420, "res": 300, "label": "ok", "ref": "have"}
-{"raw": "THE", "refs": [[115, 0, 0, 0]], "conf": [60], "geo": [[364, 128, 485, 160, 39.0, 128, 364, 1321]], "role": "heading", "page": 115, "PW": 1470, "PH": 2420, "res": 300, "label": "unk", "ref": null}
-{"raw": "MODERN", "refs": [[115, 0, 0, 1]], "conf": [66], "geo": [[486, 129, 716, 162, 39.0, 128, 364, 1321]], "role": "heading", "page": 115, "PW": 1470, "PH": 2420, "res": 300, "label": "unk", "ref": null}
-{"raw": "PROMETHEUS.", "refs": [[115, 0, 0, 2]], "conf": [69], "geo": [[717, 131, 1247, 166, 39.0, 128, 364, 1321]], "role": "heading", "page": 115, "PW": 1470, "PH": 2420, "res": 300, "label": "unk", "ref": null}
-{"raw": "Ill", "refs": [[115, 0, 0, 3]], "conf": [49], "geo": [[1248, 136, 1321, 166, 39.0, 128, 364, 1321]], "role": "heading", "page": 115, "PW": 1470, "PH": 2420, "res": 300, "label": "unk", "ref": null}
 {"raw": "excited,", "refs": [[115, 1, 0, 0]], "conf": [61], "geo": [[74, 227, 279, 280, 50.0, 227, 74, 1329]], "role": "body", "page": 115, "PW": 1470, "PH": 2420, "res": 300, "label": "ok", "ref": "excited"}
 {"raw": "was", "refs": [[115, 1, 0, 1]], "conf": [42], "geo": [[280, 242, 393, 271, 50.0, 227, 74, 1329]], "role": "body", "page": 115, "PW": 1470, "PH": 2420, "res": 300, "label": "ok", "ref": "was"}
 {"raw": "obliterated", "refs": [[115, 1, 0, 2]], "conf": [49], "geo": [[394, 228, 668, 271, 50.0, 227, 74, 1329]], "role": "body", "page": 115, "PW": 1470, "PH": 2420, "res": 300, "label": "ok", "ref": "obliterated"}

@@ -1612,12 +1612,8 @@
 {"raw": "other", "refs": [[7, 6, 13, 3]], "conf": [59], "geo": [[714, 2236, 859, 2276, 50.0, 2236, 211, 1403]], "role": "body", "page": 7, "PW": 1576, "PH": 2540, "res": 400, "label": "ok", "ref": "other"}
 {"raw": "journeys.", "refs": [[7, 6, 13, 4]], "conf": [28], "geo": [[859, 2237, 1145, 2288, 50.0, 2236, 211, 1403]], "role": "body", "page": 7, "PW": 1576, "PH": 2540, "res": 400, "label": "ok", "ref": "journeys"}
 {"raw": "And", "refs": [[7, 6, 13, 5]], "conf": [29], "geo": [[1145, 2237, 1274, 2275, 50.0, 2236, 211, 1403]], "role": "body", "page": 7, "PW": 1576, "PH": 2540, "res": 400, "label": "ok", "ref": "and"}
-{"raw": "there-", "refs": [[7, 6, 13, 6]], "conf": [50], "geo": [[1274, 2237, 1403, 2276, 50.0, 2236, 211, 1403]], "role": "body", "page": 7, "PW": 1576, "PH": 2540, "res": 400, "label": "unk", "ref": null}
-{"raw": "A", "refs": [[8, 0, 0, 0]], "conf": [0], "geo": [[543, 268, 602, 298, 44.0, 267, 543, 1368]], "role": "body", "page": 8, "PW": 1576, "PH": 2540, "res": 400, "label": "unk", "ref": null}
-{"raw": "CHRISTMAS", "refs": [[8, 0, 0, 1]], "conf": [39], "geo": [[602, 267, 866, 298, 44.0, 267, 543, 1368]], "role": "body", "page": 8, "PW": 1576, "PH": 2540, "res": 400, "label": "unk", "ref": null}
-{"raw": "CAROL.", "refs": [[8, 0, 0, 2]], "conf": [29], "geo": [[866, 267, 1352, 298, 44.0, 267, 543, 1368]], "role": "body", "page": 8, "PW": 1576, "PH": 2540, "res": 400, "label": "unk", "ref": null}
-{"raw": "I", "refs": [[8, 0, 0, 3]], "conf": [6], "geo": [[1352, 272, 1368, 298, 44.0, 267, 543, 1368]], "role": "body", "page": 8, "PW": 1576, "PH": 2540, "res": 400, "label": "unk", "ref": null}
-{"raw": "fore,", "refs": [[8, 1, 0, 0]], "conf": [14], "geo": [[188, 366, 307, 411, 50.0, 364, 188, 1373]], "role": "body", "page": 8, "PW": 1576, "PH": 2540, "res": 400, "label": "unk", "ref": null}
+{"raw": "there-", "refs": [[7, 6, 13, 6]], "conf": [50], "geo": [[1274, 2237, 1403, 2276, 50.0, 2236, 211, 1403]], "role": "body", "page": 7, "PW": 1576, "PH": 2540, "res": 400, "label": "sub", "ref": "therefore"}
+{"raw": "fore,", "refs": [[8, 1, 0, 0]], "conf": [14], "geo": [[188, 366, 307, 411, 50.0, 364, 188, 1373]], "role": "body", "page": 8, "PW": 1576, "PH": 2540, "res": 400, "label": "sub", "ref": null}
 {"raw": "uncle,", "refs": [[8, 1, 0, 1]], "conf": [45], "geo": [[307, 366, 463, 412, 50.0, 364, 188, 1373]], "role": "body", "page": 8, "PW": 1576, "PH": 2540, "res": 400, "label": "ok", "ref": "uncle"}
 {"raw": "though", "refs": [[8, 1, 0, 2]], "conf": [56], "geo": [[463, 366, 642, 416, 50.0, 364, 188, 1373]], "role": "body", "page": 8, "PW": 1576, "PH": 2540, "res": 400, "label": "ok", "ref": "though"}
 {"raw": "it", "refs": [[8, 1, 0, 3]], "conf": [14], "geo": [[642, 366, 693, 404, 50.0, 364, 188, 1373]], "role": "body", "page": 8, "PW": 1576, "PH": 2540, "res": 400, "label": "ok", "ref": "it"}

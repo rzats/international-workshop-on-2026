@@ -57,23 +57,28 @@ def running_head_index(pages):
                 if len(p["lines"]) != 1:
                     continue
                 l = p["lines"][0]
-                rel = l["bbox"][1] / H
-                if rel < 0.10 or rel > 0.90:
+                rel, rel2 = l["bbox"][1] / H, l["bbox"][3] / H
+                if rel < 0.18 or rel2 > 0.86:
                     t = head_key(l)
                     if t:
                         cnt[t] += 1
     return cnt
 
 
-def head_key(line):
-    """Normalised running-head text with the folio stripped from either end."""
+def head_key(line, k=3):
+    """Key for recognising a repeated running head.
+
+    The folio is stripped from either end and only the opening words are kept:
+    the tail of a running head is often the part the OCR engine garbles, and a
+    key built from the whole line would then differ on every page.
+    """
     ws = [re.sub(r"\d+", "#", norm_word(w[5])) for w in line["w"]]
     ws = [w for w in ws if w]
     while ws and set(ws[0]) <= {"#", ".", "-", "'"}:
         ws.pop(0)
     while ws and set(ws[-1]) <= {"#", ".", "-", "'"}:
         ws.pop()
-    return " ".join(ws)
+    return " ".join(ws[:k])
 
 
 def classify_par(par, pg, st, heads, n_pages, photos):

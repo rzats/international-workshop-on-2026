@@ -51,19 +51,34 @@ def document(key):
     """Reading-order segments for one volume, carrying labels and predictions."""
     doc, st = analyse(key)
     p_err = np.load(f"data/reliability/{key}.npy")
+    bl_by_par = {}
+    for pi, pg in enumerate(doc):
+        for ri, rec in enumerate(pg["pars"]):
+            bl_by_par[(pi, ri)] = [l.get("bl") or [0.0, 0.0] for l in rec["par"]["lines"]]
     toks_by_par = {}
     i = 0
     for line in open(f"data/aligned/{key}.jsonl"):
         r = json.loads(line)
         ref = r["refs"][0]
+        # A word hyphenated over a line break carries boxes from two source
+        # lines; each box must be credited to the line it actually sits on, or
+        # the line rectangle -- and with it every facsimile crop -- grows to
+        # span both lines.
+        parts = {}
+        for rf, g in zip(r["refs"], r["geo"]):
+            parts.setdefault(rf[2], []).append(g)
+        own = parts[ref[2]]
         toks_by_par.setdefault((ref[0], ref[1]), []).append({
             "raw": r["raw"], "line": ref[2],
             "err": r["label"] not in ("ok", "unk"),
             "scorable": r["label"] != "unk",
             "p": float(p_err[i]),
             "conf": min(r["conf"]) if r["conf"] else 0,
-            "box": (r["geo"][0][0], min(g[1] for g in r["geo"]),
-                    r["geo"][-1][2], max(g[3] for g in r["geo"])),
+            "box": (own[0][0], min(g[1] for g in own),
+                    own[-1][2], max(g[3] for g in own)),
+            "extra": [(li, (gs[0][0], min(g[1] for g in gs),
+                            gs[-1][2], max(g[3] for g in gs)))
+                      for li, gs in parts.items() if li != ref[2]],
             "xs": r["geo"][0][4] or st["xs"],
         })
         i += 1
@@ -77,16 +92,22 @@ def document(key):
             toks = toks_by_par.get((pi, ri))
             if not toks:
                 continue
-            lines = {}
+            lines, extents = {}, {}
             for t in toks:
                 lines.setdefault(t["line"], []).append(t)
+                extents.setdefault(t["line"], []).append(t["box"])
+                for li, b in t["extra"]:
+                    extents.setdefault(li, []).append(b)
+            bls = bl_by_par.get((pi, ri), [])
             lb = []
             for li in sorted(lines):
-                ts = lines[li]
+                ts, ex = lines[li], extents[li]
+                bl = bls[li] if li < len(bls) else [0.0, 0.0]
                 lb.append({
-                    "box": (min(t["box"][0] for t in ts), min(t["box"][1] for t in ts),
-                            max(t["box"][2] for t in ts), max(t["box"][3] for t in ts)),
+                    "box": (min(b[0] for b in ex), min(b[1] for b in ex),
+                            max(b[2] for b in ex), max(b[3] for b in ex)),
                     "xs": ts[0]["xs"] or st["xs"],
+                    "slope": float(bl[0]) if bl else 0.0,
                     "toks": ts,
                 })
             items.append({"kind": "par", "role": rec["role"], "toks": toks,
@@ -197,6 +218,7 @@ def strips(seg, target=None):
         for k, (a, b) in enumerate(pieces):
             out.append({"kind": "strip", "page": seg["page"], "res": seg["res"],
                         "pw": seg["pw"], "src": (a, y0, b, y1), "scale": scale,
+                        "slope": ln.get("slope", 0.0),
                         "w": (b - a) * scale, "h": h,
                         "indent": SPEC["runover"] if k else 0.0})
     return out
@@ -244,6 +266,7 @@ def build_items(segs, route, breaker=kp_ragged, cache=None):
                               "src": s["src"], "scale": s["scale"], "w": s["w"],
                               "indent": s["indent"], "page": s["page"],
                               "res": s["res"], "pw": s["pw"],
+                              "slope": s.get("slope", 0.0),
                               "toks": [] if j else seg["toks"]})
             continue
         indent = SPEC["runover"] if role == "body" else 0.0
