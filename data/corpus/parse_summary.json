@@ -1,0 +1,58 @@
+{
+ "alice": {
+  "pages": 456,
+  "words": 62437
+ },
+ "pride": {
+  "pages": 520,
+  "words": 134921
+ },
+ "frankenstein": {
+  "pages": 330,
+  "words": 82537
+ },
+ "holmes": {
+  "pages": 338,
+  "words": 111965
+ },
+ "carol": {
+  "pages": 64,
+  "words": 14055
+ },
+ "leaves": {
+  "pages": 370,
+  "words": 76827
+ },
+ "timemachine": {
+  "pages": 238,
+  "words": 35571
+ },
+ "treasure": {
+  "pages": 324,
+  "words": 75806
+ },
+ "jungle": {
+  "pages": 338,
+  "words": 55722
+ },
+ "dracula": {
+  "pages": 374,
+  "words": 163707
+ },
+ "walden": {
+  "pages": 370,
+  "words": 109949
+ },
+ "tomsawyer": {
+  "pages": 304,
+  "words": 79882
+ },
+ "moby": {
+  "pages": 688,
+  "words": 229720
+ },
+ "baskerville": {
+  "pages": 289,
+  "words": 59375
+ }
+}

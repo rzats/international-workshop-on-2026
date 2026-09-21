@@ -7,3 +7,5 @@ data/raw/
 data/scans/
 *.egg-info/
 .ipynb_checkpoints/
+data/pages/
+template/unpacked/

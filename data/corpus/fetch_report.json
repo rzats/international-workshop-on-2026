@@ -1,0 +1,128 @@
+{
+ "alice": {
+  "ident": "alicesadventwond00carrrich",
+  "year": 1894,
+  "pg": 11,
+  "genre": "illustrated",
+  "label": "Carroll, Alice's Adventures in Wonderland",
+  "hocr_bytes": 9663805,
+  "pg_bytes": 174311
+ },
+ "pride": {
+  "ident": "prideprejudice00aust",
+  "year": 1894,
+  "pg": 1342,
+  "genre": "prose",
+  "label": "Austen, Pride and Prejudice",
+  "hocr_bytes": 19882957,
+  "pg_bytes": 772386
+ },
+ "frankenstein": {
+  "ident": "frankensteinormo00shel_9",
+  "year": 1891,
+  "pg": 84,
+  "genre": "prose",
+  "label": "Shelley, Frankenstein",
+  "hocr_bytes": 13006001,
+  "pg_bytes": 448885
+ },
+ "holmes": {
+  "ident": "adventuresofsher001892doyl",
+  "year": 1892,
+  "pg": 1661,
+  "genre": "illustrated",
+  "label": "Doyle, The Adventures of Sherlock Holmes",
+  "hocr_bytes": 16388113,
+  "pg_bytes": 607606
+ },
+ "carol": {
+  "ident": "christmascarol00dickiala",
+  "year": 1877,
+  "pg": 46,
+  "genre": "illustrated",
+  "label": "Dickens, A Christmas Carol",
+  "hocr_bytes": 2108448,
+  "pg_bytes": 182250
+ },
+ "leaves": {
+  "ident": "leavesofgrassrhys00whitrich",
+  "year": 1886,
+  "pg": 1322,
+  "genre": "verse",
+  "label": "Whitman, Leaves of Grass",
+  "hocr_bytes": 12114420,
+  "pg_bytes": 780492
+ },
+ "timemachine": {
+  "ident": "timemachineinven00well",
+  "year": 1895,
+  "pg": 35,
+  "genre": "prose",
+  "label": "Wells, The Time Machine",
+  "hocr_bytes": 5565149,
+  "pg_bytes": 204384
+ },
+ "treasure": {
+  "ident": "islandtreasure00stevrich",
+  "year": 1883,
+  "pg": 120,
+  "genre": "illustrated",
+  "label": "Stevenson, Treasure Island",
+  "hocr_bytes": 11171057,
+  "pg_bytes": 399873
+ },
+ "jungle": {
+  "ident": "junglebook00kipl2",
+  "year": 1894,
+  "pg": 236,
+  "genre": "illustrated",
+  "label": "Kipling, The Jungle Book",
+  "hocr_bytes": 8448008,
+  "pg_bytes": 303640
+ },
+ "dracula": {
+  "ident": "draculabr00stokuoft",
+  "year": 1897,
+  "pg": 345,
+  "genre": "prose",
+  "label": "Stoker, Dracula",
+  "hocr_error": "500 Server Error: Internal Server Error for url: https://dn760103.eu.archive.org/0/items/draculabr00stokuoft/draculabr00stokuoft_hocr.html",
+  "pg_bytes": 890348
+ },
+ "walden": {
+  "ident": "waldenorlifeinwo1854thor",
+  "year": 1854,
+  "pg": 205,
+  "genre": "prose",
+  "label": "Thoreau, Walden",
+  "hocr_bytes": 15934132,
+  "pg_bytes": 667957
+ },
+ "tomsawyer": {
+  "ident": "adventuresoftoms00twaiiala",
+  "year": 1876,
+  "pg": 74,
+  "genre": "illustrated",
+  "label": "Twain, The Adventures of Tom Sawyer",
+  "hocr_bytes": 11612682,
+  "pg_bytes": 434357
+ },
+ "moby": {
+  "ident": "mobydickorwhale01melv",
+  "year": 1851,
+  "pg": 2701,
+  "genre": "prose",
+  "label": "Melville, Moby-Dick",
+  "hocr_bytes": 32945760,
+  "pg_bytes": 1276267
+ },
+ "baskerville": {
+  "ident": "cihm_79798",
+  "year": 1902,
+  "pg": 2852,
+  "genre": "microform",
+  "label": "Doyle, The Hound of the Baskervilles (microform)",
+  "hocr_bytes": 9164743,
+  "pg_bytes": 388046
+ }
+}
