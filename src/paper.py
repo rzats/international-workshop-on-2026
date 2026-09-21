@@ -42,6 +42,7 @@ def facts():
     rel = {r["key"]: r for r in S["reliability"]}
     pb = {r["key"]: r for r in S["per_book_10pct"]}
     m10 = [p for p in S["routing"]["model"] if p["cov_loss"] == 0.10][0]
+    c10 = [p for p in S["routing"]["conf"] if p["cov_loss"] == 0.10][0]
     base = S["routing"]["model"][0]
     import numpy as np
     conf90 = np.load("data/features/baskerville_X.npy")[:, 2]
@@ -100,7 +101,9 @@ def facts():
         "BASKMODEL": f"{pb['baskerville']['model']['red']:.1f}",
         "BASKCONF": f"{pb['baskerville']['conf']['red']:.1f}",
         "BASKPAGES": f"{100 * (pb['baskerville']['model']['pages'] / pb['baskerville']['base']['pages'] - 1):.0f}",
-        "MEASURE": "482", "CPL": "58", "HEIGHT10": "0.26",
+        "MEASURE": "482", "CPL": "57", "HEIGHT10": "0.26",
+        "CI10M": f"{m10['red_lo']:.1f}–{m10['red_hi']:.1f}",
+        "CI10C": f"{c10['red_lo']:.1f}–{c10['red_hi']:.1f}",
         "NTOK": "n", "EXPERR": "e", "SECREL": "6.3",
     }
     return f, S, F, L, A

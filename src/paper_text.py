@@ -146,7 +146,7 @@ BODY = [
  "{MEASURE} pt. Running text is set at 18 pt with 1.4 line spacing in Atkinson Hyperlegible, a "
  "typeface designed for readers with low vision. Setting is ragged right rather than justified, "
  "and hyphenation is disabled, both following the guidance summarised above. Captions and notes "
- "are set at the same size as the body. Headings are 22 pt. At 18 pt the measure holds roughly "
+ "are set at the same size as the body. Headings are 22 pt. Composed body lines average "
  "{CPL} characters, which is inside the range usually recommended for large print."),
 ("p",
  "Two properties of the output are treated as non-negotiable. The first is typographic: no "
@@ -341,7 +341,9 @@ BODY += [
  "against the scanned pages. Furniture and verse are reliable; heading detection confuses "
  "chapter titles with the running heads that escaped the furniture filter; and caption and "
  "footnote detection are poor, because the illustration regions the recognisers emit are "
- "over-generated and body text often sits next to one. Because the sample is stratified by "
+ "over-generated and body text often sits next to one. That tokens labelled caption match the "
+ "e-text almost as often as body text does (Table 2) corroborates the sampled verdict that most "
+ "of them are body text. Because the sample is stratified by "
  "predicted class it measures per-class precision, not overall accuracy; furniture and body "
  "together account for {FBSHARE}% of all tokens."),
 ("p",
@@ -399,7 +401,8 @@ BODY += [
  "words per thousand. Withdrawing {B10} of the running text on the reliability model's "
  "ranking brings this to {RED10V}, a reduction of {RED10}%, and closes {GAP10}% of the gap "
  "between reflowing everything and the best any ranking could do. The same budget spent on the "
- "engine's confidence reaches {REDC10V} ({REDC10}%), and spent at random {REDR10V}. At a 40% "
+ "engine's confidence reaches only {REDC10V}, a reduction of {REDC10}%, and spent at random "
+ "{REDR10V}. At a 40% "
  "budget the model reaches {RED40V} against {REDC40V} for confidence and {REDR40V} for random, "
  "with the oracle at {REDO40V}."),
 ("p",
@@ -418,13 +421,13 @@ BODY += [
 ("p",
  "Per volume (Table 5) the reliability model beats the confidence ranking in {WINS} of the "
  "{NBOOKS} volumes at the 10% operating point; the paired sign test over volumes is not "
- "significant (p = {WINP}), although the pooled difference is far outside its interval. The "
- "exceptions are informative. A Christmas Carol is the smallest volume in the corpus "
+ "significant (p = {WINP}), although the pooled difference is decisive, the Wilson intervals "
+ "{CI10M} and {CI10C} being disjoint. The four exceptions are informative. A Christmas Carol is the smallest volume in the corpus "
  "({CAROLTOK} scorable tokens) and the only one in which random withdrawal beats both rankings, "
  "which is what one expects when the error is spread evenly rather than concentrated. Leaves of "
  "Grass and Tom Sawyer are the two volumes in which paragraph segmentation is weakest – "
  "free verse in the first, dialogue in the second – so paragraph-level ranking has less to work "
- "with. The microfilm volume is the clearest win ({BASKBASE} to {BASKMODEL} against {BASKCONF}), "
+ "with; in Dracula the two rankings are level to within 0.1 per thousand. The microfilm volume is the clearest win ({BASKBASE} to {BASKMODEL} against {BASKCONF}), "
  "but also the one case where the page cost is real: its line rectangles are tall relative to "
  "the type, so its facsimile strips are expensive, and the extent grows by {BASKPAGES}%."),
 ("table", "perbook"),
