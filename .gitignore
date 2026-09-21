@@ -9,3 +9,4 @@ data/scans/
 .ipynb_checkpoints/
 data/pages/
 template/unpacked/
+data/features/

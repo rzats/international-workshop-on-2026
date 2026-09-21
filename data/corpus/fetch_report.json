@@ -2,11 +2,14 @@
  "alice": {
   "ident": "alicesadventwond00carrrich",
   "year": 1894,
-  "pg": 11,
+  "pg": [
+   11,
+   12
+  ],
   "genre": "illustrated",
   "label": "Carroll, Alice's Adventures in Wonderland",
   "hocr_bytes": 9663805,
-  "pg_bytes": 174311
+  "pg_bytes": 370845
  },
  "pride": {
   "ident": "prideprejudice00aust",
@@ -86,7 +89,7 @@
   "pg": 345,
   "genre": "prose",
   "label": "Stoker, Dracula",
-  "hocr_error": "500 Server Error: Internal Server Error for url: https://dn760103.eu.archive.org/0/items/draculabr00stokuoft/draculabr00stokuoft_hocr.html",
+  "hocr_bytes": 23213614,
   "pg_bytes": 890348
  },
  "walden": {

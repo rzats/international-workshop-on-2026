@@ -53,7 +53,8 @@ if __name__ == "__main__":
         except Exception as e:
             rec["hocr_error"] = str(e)
         try:
-            t = pg_text(pgid); rec["pg_bytes"] = os.path.getsize(t)
+            ids = pgid if isinstance(pgid, tuple) else (pgid,)
+            rec["pg_bytes"] = sum(os.path.getsize(pg_text(i)) for i in ids)
         except Exception as e:
             rec["pg_error"] = str(e)
         print(key, rec.get("hocr_bytes"), rec.get("pg_bytes"),

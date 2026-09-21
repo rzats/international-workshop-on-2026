@@ -3,7 +3,7 @@ clean Project Gutenberg e-texts that serve as transcription ground truth."""
 
 # key: (IA identifier, scan year, PG ebook id, genre tag, short label)
 CORPUS = {
-    "alice":       ("alicesadventwond00carrrich",  1894, 11,   "illustrated", "Carroll, Alice's Adventures in Wonderland"),
+    "alice":       ("alicesadventwond00carrrich",  1894, (11, 12), "illustrated", "Carroll, Alice's Adventures in Wonderland"),
     "pride":       ("prideprejudice00aust",        1894, 1342, "prose",       "Austen, Pride and Prejudice"),
     "frankenstein":("frankensteinormo00shel_9",    1891, 84,   "prose",       "Shelley, Frankenstein"),
     "holmes":      ("adventuresofsher001892doyl",  1892, 1661, "illustrated", "Doyle, The Adventures of Sherlock Holmes"),
