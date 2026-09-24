@@ -61,9 +61,12 @@ REFS = {
  "chung2002": dict(
    text="S. T. L. Chung, The effect of letter spacing on reading speed in central and peripheral vision, Investigative Ophthalmology & Visual Science 43 (2002) 1270–1276.",
    doi=None),
- "zatserkovna2019": dict(
-   text="R. Zatserkovna, L. Maik, Analysis of Braille translation software, Printing and Publishing 2 (2019) 36–44. doi:10.32403/0554-4866-2019-2-78-36-44.",
-   doi="10.32403/0554-4866-2019-2-78-36-44"),
+ "zatserkovnyi2022": dict(
+   text="R. Zatserkovnyi, V. Maik, R. Zatserkovna, Modelling the quality of adapted textbooks for "
+        "people with low vision, in: 2022 IEEE 9th International Conference on Problems of "
+        "Infocommunications, Science and Technology (PIC S&T), IEEE, 2022, pp. 163–167. "
+        "doi:10.1109/PICST57299.2022.10238497.",
+   doi="10.1109/PICST57299.2022.10238497"),
  "zatserkovnyi2023": dict(
    text="R. Zatserkovnyi, V. Senkivskyi, R. Zatserkovna, V. Maik, Application for determining the "
         "usability of adapted textbooks by people with low vision, in: 2023 IEEE 18th International "

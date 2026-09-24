@@ -135,9 +135,11 @@ BODY = [
  "European Accessibility Act [eaa2019] makes such requirements binding for e-books placed on "
  "the Union market from 2025. The Marrakesh Treaty [marrakesh2013] gives authorised entities "
  "the right to make accessible-format copies of published works, which is precisely the "
- "activity this pipeline is meant to support. Work on production tooling for print-disabled "
- "readers has concentrated on braille transcription [zatserkovna2019]; large print has received "
- "less attention, although it serves a far larger population."),
+ "activity this pipeline is meant to support. Production tooling for print-disabled readers has "
+ "been studied mostly at the level of the individual edition, for instance by modelling the "
+ "quality of adapted textbooks for readers with low vision [zatserkovnyi2022]; producing "
+ "large-print editions at the scale of a digitised collection has received less attention, "
+ "although it would serve a far larger population."),
 
 ("h1", "Design targets"),
 ("p0",

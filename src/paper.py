@@ -420,7 +420,7 @@ def build():
     assert len(cites.order) >= 20, cites.order
     # Self-citation policy: at most two, never at [1], never adjacent.
     selfc = [i for i, k in enumerate(cites.order)
-             if k in ("zatserkovna2019", "zatserkovnyi2023")]
+             if k in ("zatserkovnyi2022", "zatserkovnyi2023")]
     assert len(selfc) <= 2, selfc
     assert 0 not in selfc, "a self-citation must not be reference [1]"
     assert all(b - a > 1 for a, b in zip(selfc, selfc[1:])), "self-citations must not be adjacent"
@@ -472,5 +472,6 @@ def build():
 if __name__ == "__main__":
     cites, f = build()
     print("references:", len(cites.order))
-    print("self-citation position:", cites.order.index("zatserkovna2019") + 1)
+    print("self-citation positions:", [cites.order.index(k) + 1 for k in
+                                       ("zatserkovnyi2022", "zatserkovnyi2023")])
     print("built", OUT_ODT, OUT_PDF)
