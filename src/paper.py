@@ -418,7 +418,12 @@ def build():
     cites = Cites()
     body = render_body(f, tables, cites)
     assert len(cites.order) >= 20, cites.order
-    assert cites.order[0] != "zatserkovna2019", "self-citation must not be reference [1]"
+    # Self-citation policy: at most two, never at [1], never adjacent.
+    selfc = [i for i, k in enumerate(cites.order)
+             if k in ("zatserkovna2019", "zatserkovnyi2023")]
+    assert len(selfc) <= 2, selfc
+    assert 0 not in selfc, "a self-citation must not be reference [1]"
+    assert all(b - a > 1 for a, b in zip(selfc, selfc[1:])), "self-citations must not be adjacent"
 
     os.makedirs("build", exist_ok=True)
     unpack(TPL, WORK)

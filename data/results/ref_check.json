@@ -123,6 +123,12 @@
   "title": "Analysis of Braille translation software",
   "year": 2019
  },
+ "zatserkovnyi2023": {
+  "doi": "10.1109/CSIT61576.2023.10324055",
+  "status": "ok",
+  "title": "Application for Determining the Usability of Adapted Textbooks by People with Low Vision",
+  "year": 2023
+ },
  "wilson1927": {
   "doi": "10.1080/01621459.1927.10502953",
   "status": "ok",

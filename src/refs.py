@@ -64,6 +64,12 @@ REFS = {
  "zatserkovna2019": dict(
    text="R. Zatserkovna, L. Maik, Analysis of Braille translation software, Printing and Publishing 2 (2019) 36–44. doi:10.32403/0554-4866-2019-2-78-36-44.",
    doi="10.32403/0554-4866-2019-2-78-36-44"),
+ "zatserkovnyi2023": dict(
+   text="R. Zatserkovnyi, V. Senkivskyi, R. Zatserkovna, V. Maik, Application for determining the "
+        "usability of adapted textbooks by people with low vision, in: 2023 IEEE 18th International "
+        "Conference on Computer Science and Information Technologies (CSIT), IEEE, 2023, pp. 1–4. "
+        "doi:10.1109/CSIT61576.2023.10324055.",
+   doi="10.1109/CSIT61576.2023.10324055"),
  "wilson1927": dict(
    text="E. B. Wilson, Probable inference, the law of succession, and statistical inference, Journal of the American Statistical Association 22 (1927) 209–212. doi:10.1080/01621459.1927.10502953.",
    doi="10.1080/01621459.1927.10502953"),

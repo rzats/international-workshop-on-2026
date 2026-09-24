@@ -467,7 +467,9 @@ BODY += [
  "errors are harmful and reflowability is valuable, not on measured reading performance. A "
  "study with low-vision readers, measuring reading speed and comprehension across the operating "
  "curve, is the natural next step and would also give the coverage budget an empirical setting "
- "rather than an operator's guess."),
+ "rather than an operator's guess; instruments for assessing how usable an adapted edition is "
+ "to such readers already exist [zatserkovnyi2023] and could be applied at several points along "
+ "the curve."),
 ("p",
  "Two engineering limitations are worth naming. Facsimile strips are images and carry no text "
  "layer, so the passages the system distrusts are also the passages a screen reader cannot "
